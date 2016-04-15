@@ -1,4 +1,4 @@
-Holdem Poker Program
+Uno Program
 ===
 
 *by*

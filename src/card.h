@@ -40,7 +40,7 @@ class card
 	//Strong enumerations 
 	//enumerator names are local to the enum and their values do not implicitly convert to other types 
 	
-	enum class rank {SKIP,DRAW_TWO,REVERSE,WILD, ILD_FOUR,ZERO,ONE,TWO,THREE,
+	enum class rank {SKIP,DRAW_TWO,REVERSE,WILD,WILD_FOUR,ZERO,ONE,TWO,THREE,
 		FOUR,FIVE,SIX,SEVEN,EIGHT,NINE};
 
 	enum class color {RED,GREEN,YELLOW,BLUE};

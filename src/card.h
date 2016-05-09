@@ -20,13 +20,13 @@ Include files
 ~~~~~~~~~~~~~~~~~~~~~~
 */
 
-#include <iostream>
+#include <ostream> //not using the istream so no need to include the full iostream
 #include <string>
 #include <vector>
 #include <algorithm>
-#include <ctime>
+//#include <ctime> //move to deck.cpp
 
-using namespace std;
+//using namespace std;
 
 /*
  ~~~~~~~~~~~~~~~~~~~
@@ -34,28 +34,30 @@ using namespace std;
  ~~~~~~~~~~~~~~~~~~~
 */ 
 
-class card
+class Card
 {
 	public:
 	//Strong enumerations 
 	//enumerator names are local to the enum and their values do not implicitly convert to other types 
 	
-	enum class rank {SKIP,DRAW_TWO,REVERSE,WILD,WILD_FOUR,ZERO,ONE,TWO,THREE,
-		FOUR,FIVE,SIX,SEVEN,EIGHT,NINE};
+	enum class Value {ZERO,ONE,TWO,THREE,
+		FOUR,FIVE,SIX,SEVEN,EIGHT,NINE,SKIP = 50,DRAW_TWO = 50,REVERSE = 50,WILD = 50,WILD_DRAW_FOUR = 50};
 
-	enum class color {RED,GREEN,YELLOW,BLUE};
+	enum class Color {RED,GREEN,YELLOW,BLUE};
 
-	/*
-	 ~~~~~~~~~~~~~~~~~~
-	 Return the value of a card
-	 ~~~~~~~~~~~~~~~~~~
-	 */
-	 int GetValue() const;
+
+	Card(Value value,Color color);
+
+
+	Value GetValue() const; //get the value of the card 	
+	void SetValue(Value Value); //set the value of the card
+	Color GetColor() const; //get the color of the card
+	void SetColor(Color color); //set the color of the card
 
 	private:
-	
-	rank m_Rank;
-	color m_Color;
+	int m_value; //rank of the card
+	Color color; //color of the card
+
 };
 #endif
 

@@ -42,7 +42,7 @@ class Card
 	//has a integer explicidly stated.  
 
 	enum Value {ZERO = 0,ONE,TWO,THREE,
-		FOUR,FIVE,SIX,SEVEN,EIGHT,NINE,SKIP = 50,DRAW_TWO = 50,REVERSE = 50,WILD = 50,WILD_DRAW_FOUR = 50};
+		FOUR,FIVE,SIX,SEVEN,EIGHT,NINE,SKIP = 50,DRAW_TWO,REVERSE,WILD,WILD_DRAW_FOUR};
 
 	enum Color {RED,GREEN,YELLOW,BLUE};
 
@@ -52,7 +52,10 @@ class Card
 	
 	//function that will return a string for enum equivalent
 	std::string getValue(Value value);
-
+	
+	//function that will return a string for enum equivalent
+	std::string getColor(Color color);
+	
 	private:
 	Value m_value; //rank of the card
 	Color m_color; //color of the card

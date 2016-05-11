@@ -23,12 +23,37 @@ Card::Card(Value value, Color color):
 
 //method that will convert a enum value to a string
 std::string Card::getValue(Value value){
+	//using switch statemnet to change each enum value of the card into
+	//a string output
 	switch (value)
 	{
 		case ZERO: return "Zero";
 		case ONE: return "One";
 		case TWO: return "Two";
-
+		case THREE: return "Three";
+		case FOUR: return "Four";
+		case FIVE: return "Five";
+		case SIX: return "Six";
+		case SEVEN: return "Seven";
+		case EIGHT: return "Eight";
+		case NINE: return "Nine";
+		case SKIP: return "Skip";
+		case DRAW_TWO: return "Draw Two";
+		case REVERSE: return "Reverse";
+		case WILD: return "Wild";
+		case WILD_DRAW_FOUR: return "Wild Draw Four";
 	}
 }
 
+//method that will convert a enum color to a string
+std::string Card::getColor(Color color){
+	//Using a switch s tatement to change each enum color of the card into
+	//a string output
+	switch (color)
+	{
+		case RED: return "Red";
+		case GREEN: return "Green";
+		case YELLOW: return "Yellow";
+		case BLUE: return "Blue";
+	}
+}

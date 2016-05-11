@@ -2,7 +2,7 @@
  ~~~~~~~~~~~~~~~~~~~~~~~~~~
 Uno in C++
 File:card.h
- ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
 /*
@@ -20,13 +20,11 @@ Include files
 ~~~~~~~~~~~~~~~~~~~~~~
 */
 
-#include <ostream> //not using the istream so no need to include the full iostream
+#include <iostream> 
 #include <string>
 #include <vector>
 #include <algorithm>
-//#include <ctime> //move to deck.cpp
 
-//using namespace std;
 
 /*
  ~~~~~~~~~~~~~~~~~~~
@@ -38,25 +36,26 @@ class Card
 {
 	public:
 	//Strong enumerations 
-	//enumerator names are local to the enum and their values do not implicitly convert to other types 
-	
-	enum class Value {ZERO,ONE,TWO,THREE,
+	//enumerator names are local to the enum and their values do not implicitly convert to other types
+	//The enum Value class starts with 0 and ends at 50. Face cards or action ards are all worth 50 points
+	//When using an enum class the value or integer increases, this is why zero is 0 and no other card value
+	//has a integer explicidly stated.  
+
+	enum Value {ZERO = 0,ONE,TWO,THREE,
 		FOUR,FIVE,SIX,SEVEN,EIGHT,NINE,SKIP = 50,DRAW_TWO = 50,REVERSE = 50,WILD = 50,WILD_DRAW_FOUR = 50};
 
-	enum class Color {RED,GREEN,YELLOW,BLUE};
+	enum Color {RED,GREEN,YELLOW,BLUE};
 
+	Card();
 
-	Card(Value value,Color color);
-
-
-	Value GetValue() const; //get the value of the card 	
-	void SetValue(Value Value); //set the value of the card
-	Color GetColor() const; //get the color of the card
-	void SetColor(Color color); //set the color of the card
+	Card(Value value,Color color); //constructor
+	
+	//function that will return a string for enum equivalent
+	std::string getValue(Value value);
 
 	private:
-	int m_value; //rank of the card
-	Color color; //color of the card
+	Value m_value; //rank of the card
+	Color m_color; //color of the card
 
 };
 #endif

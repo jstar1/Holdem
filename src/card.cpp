@@ -26,8 +26,8 @@ std::string Card::getValue(Value value){
 	switch (value)
 	{
 	case Value::ZERO: return "Zero";
-		case Value::ONE: return "One";
-		case Value::TWO: return "Two";
+		case ONE: return "One";
+		case TWO: return "Two";
 
 	}
 }

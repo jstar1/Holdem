@@ -2,6 +2,6 @@
 
 int main()
 {
-	Card test(Value::ZERO,Color::RED);
+	Card test(Card::ZERO,Card::RED);
 	return 0;
 }

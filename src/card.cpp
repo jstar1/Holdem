@@ -25,7 +25,7 @@ Card::Card(Value value, Color color):
 std::string Card::getValue(Value value){
 	switch (value)
 	{
-	case Value::ZERO: return "Zero";
+		case ZERO: return "Zero";
 		case ONE: return "One";
 		case TWO: return "Two";
 

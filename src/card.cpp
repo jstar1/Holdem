@@ -42,6 +42,7 @@ std::string Card::getValue(Value value){
 		case REVERSE: return "Reverse";
 		case WILD: return "Wild";
 		case WILD_DRAW_FOUR: return "Wild Draw Four";
+		default: return "Failed";
 	}
 }
 
@@ -55,5 +56,6 @@ std::string Card::getColor(Color color){
 		case GREEN: return "Green";
 		case YELLOW: return "Yellow";
 		case BLUE: return "Blue";
+		default: return "Failed";
 	}
 }

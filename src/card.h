@@ -22,8 +22,6 @@ Include files
 
 #include <iostream> 
 #include <string>
-#include <vector>
-#include <algorithm>
 
 
 /*
@@ -46,7 +44,7 @@ class Card
 
 	enum Color {RED,GREEN,YELLOW,BLUE};
 
-	Card();
+	Card(); //default constructor
 
 	Card(Value value,Color color); //constructor
 	

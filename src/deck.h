@@ -21,7 +21,7 @@ Included files
 */
 
 #include "card.h"
-#include "vector"
+#include <vector>
 
 /*
 ========================
@@ -29,9 +29,11 @@ Class Deck
 ========================
 */
 
+/*NOTE: Creating a object called a Deck that contains a  vector of Cards*/
+
 class Deck
 {
-	Deck(int n); //constructor
+	Deck(); //constructor
 	
 	void suffle(); //shuffle deck
 	void print_deck() const; //print deck for testing

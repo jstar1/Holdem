@@ -6,10 +6,11 @@ File:card.cpp
 */
 
 /*
-~~~~~~~~~~~~~~~~~~~~~~~~
-Implementation of the .h 
-~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Implementation of the card.h 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
+
 #include "card.h"
 
 //default constructor

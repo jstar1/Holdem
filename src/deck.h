@@ -36,7 +36,7 @@ class Deck
 	Deck(); //constructor
 	
 	void suffle(); //shuffle deck
-	void print_deck() const; //print deck for testing
+	void printDeck() const; //print deck for testing
 
 	private:
 	/*NOTE: The object named deck has a single instance vairale name m_card, which is a vector of the Card object*/

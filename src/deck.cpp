@@ -31,3 +31,21 @@ Deck::Deck(){
 		}
 	}
 }
+
+//print deck
+Deck::printDeck() const{
+	for (int i = 0	
+		
+}
+
+
+
+
+
+
+
+
+
+
+
+

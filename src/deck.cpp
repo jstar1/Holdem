@@ -15,7 +15,7 @@ Implementation of deck.h
 //constructor
 Deck::Deck(){
 						
-	std::vector<Card> temp (108); //temp vector that takes in a Card, allocated to 108 the size of the deck
+	std::vector<Card> temp(108); //temp vector that takes in a Card, allocated to 108 the size of the deck
 	
 	m_card = temp; //m_card copies the temp
 
@@ -33,8 +33,8 @@ Deck::Deck(){
 }
 
 //print deck
-Deck::printDeck() const{
-	for (int i = 0	
+void Deck::printDeck() const{
+	//for (int i = 0;)	
 		
 }
 

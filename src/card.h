@@ -47,7 +47,7 @@ class Card
 	Card(); //default constructor
 
 	Card(Value value,Color color); //constructor
-	
+		
 	//function that will return a string for enum equivalent
 	std::string getValue(Value value);
 	

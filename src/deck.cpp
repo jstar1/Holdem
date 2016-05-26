@@ -32,14 +32,22 @@ Deck::Deck(){
 	}
 }
 
-//print deck
-void Deck::printDeck() const{
-	//for (int i = 0;)	
-		
+std::ostream& operator << (std::ostream& out, const std::vector<Card>& vType){
+	
+	out << vType;
+	return out;	
 }
 
+//print deck
+/*
+void Deck::printDeck() const{
 
+	//for(const auto& i : m_card)
+	//	std::cout << i << "\n";
 
+	std::copy(m_card.begin(),m_card.end(),std::ostream_iterator<Card>(std::cout, ""));
+}
+*/
 
 
 

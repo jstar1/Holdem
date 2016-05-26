@@ -22,7 +22,9 @@ Included files
 
 #include "card.h"
 #include <vector>
-
+#include <ostream>
+#include <algorithm>
+#include <iterator>
 /*
 ========================
 Class Deck
@@ -33,14 +35,21 @@ Class Deck
 
 class Deck
 {
-	Deck(); //constructor
+	public:
 	
-	void suffle(); //shuffle deck
-	void printDeck() const; //print deck for testing
-
+		Deck(); //constructor
+	
+	
+		void suffle(); //shuffle deck
+	
+		void printDeck() const; //print deck for testing
+	
+		friend std::ostream& operator << (std::ostream&, const std::vector<Card>&);
+	
 	private:
-	/*NOTE: The object named deck has a single instance vairale name m_card, which is a vector of the Card object*/
-	std::vector<Card> m_card; //using vector as a container for m deck  
+	
+		/*NOTE: The object named deck has a single instance vairale name m_card, which is a vector of the Card object*/
+		std::vector<Card> m_card; //using vector as a container for m deck  
 
 };
 #endif

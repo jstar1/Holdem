@@ -39,12 +39,8 @@ class Deck
 	
 		Deck(); //constructor
 	
+		void shuffle(); //shuffle deck	
 	
-		void suffle(); //shuffle deck
-	
-		void printDeck() const; //print deck for testing
-	
-		friend std::ostream& operator << (std::ostream&, const std::vector<Card>&);
 	
 	private:
 	

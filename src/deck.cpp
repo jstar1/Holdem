@@ -32,24 +32,10 @@ Deck::Deck(){
 	}
 }
 
-std::ostream& operator << (std::ostream& out, const std::vector<Card>& vType){
-	
-	out << vType;
-	return out;	
+//shuffle deck using the random_shuffle function call. This is using the
+void Deck::shuffle(){
+	std::random_shuffle(m_card.begin(),m_card.end());
 }
-
-//print deck
-/*
-void Deck::printDeck() const{
-
-	//for(const auto& i : m_card)
-	//	std::cout << i << "\n";
-
-	std::copy(m_card.begin(),m_card.end(),std::ostream_iterator<Card>(std::cout, ""));
-}
-*/
-
-
 
 
 

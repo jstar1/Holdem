@@ -44,7 +44,6 @@ class Deck
 	
 	private:
 	
-		/*NOTE: The object named deck has a single instance vairale name m_card, which is a vector of the Card object*/
 		std::vector<Card> m_card; //using vector as a container for m deck  
 
 };

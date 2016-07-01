@@ -25,6 +25,8 @@ Included files
 #include <ostream>
 #include <algorithm>
 #include <iterator>
+#include <ctime>
+
 /*
 ========================
 Class Deck

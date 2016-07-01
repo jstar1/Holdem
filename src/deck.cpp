@@ -34,6 +34,8 @@ Deck::Deck(){
 
 //shuffle deck using the random_shuffle function call. This is using the
 void Deck::shuffle(){
+
+	srand((unsigned int)time(0));
 	std::random_shuffle(m_card.begin(),m_card.end());
 }
 

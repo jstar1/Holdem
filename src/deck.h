@@ -25,7 +25,6 @@ Included files
 #include <ostream>
 #include <algorithm>
 #include <iterator>
-#include <ctime>
 
 /*
 ========================
@@ -42,8 +41,8 @@ class Deck
 		Deck(); //constructor
 	
 		void shuffle(); //shuffle deck	
-	
-	
+		Card drawCard(); //Draw a card from the deck	
+
 	private:
 	
 		std::vector<Card> m_card; //using vector as a container for m deck  

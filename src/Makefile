@@ -4,4 +4,5 @@ all:
 	g++ *.cpp -g -std=c++11
 
 clean:
-	rm *.out	
+	rm *.out
+	rm .*.swp

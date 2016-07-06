@@ -11,6 +11,7 @@ Implementation of deck.h
 */
 
 #include "deck.h"
+#include <ctime>
 
 //constructor
 Deck::Deck(){
@@ -27,7 +28,7 @@ Deck::Deck(){
 		for (Card::Value value = Card::ZERO; value <= Card::WILD_DRAW_FOUR; value = Card::Value(value+1))
 		{
 
-			m_card.push_back(Card(value,color)); //push_back function is used to at a new element to the vector
+			m_card.push_back(Card(value,color)); //push_back function is used to add a new element to the vector
 		}
 	}
 }
@@ -40,9 +41,12 @@ void Deck::shuffle(){
 	std::random_shuffle(m_card.begin(),m_card.end());
 }
 
+//Function that draws a card from the deck
+//returns the card that is on the top
+Card Deck::drawCard(){
 
-
-
-
-
+	Card aCard = m_card[0];
+	m_card.erase(m_card.begin());
+	return aCard;
+}
 
